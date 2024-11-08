@@ -21,3 +21,6 @@
         dataGrid1.ItemsSource = dt.DefaultView; //Dodanie wypełnionych danych do atrybutu ItemSource naszego DataGrida
     - W catch(jeżeli będzie błąd wyświetlamy komunikat): 
         MessageBox.Show("Błąd podczas połączenia z bazą: " + ex.Message, "ERROR!!!!!!!!!!!!!!"); //ex to metoda catch(MySqlException ex)
+
+        
+        ![alt text](Bruno.Buczkowski.database_connection.PNG)
