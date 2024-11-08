@@ -17,8 +17,11 @@
     - Potem w przypadku DataGrid robimy:
       
         DataTable dt = new DataTable(); //Definicja tabeli
-        MySqlDataAdapter da = new MySqlDataAdapter(cmdSel); //Tworzenie adaptera      
+      
+        MySqlDataAdapter da = new MySqlDataAdapter(cmdSel); //Tworzenie adaptera
+        
         da.Fill(dt); //Wypełnienie tabeli
+      
         dataGrid1.ItemsSource = dt.DefaultView; //Dodanie wypełnionych danych do atrybutu ItemSource naszego DataGrida
       
     - W catch(jeżeli będzie błąd wyświetlamy komunikat): 
