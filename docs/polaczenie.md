@@ -20,6 +20,7 @@
     - try catch
     - w try robimy using (MySqlCommand  cmdSel = new MySqlCommand(sql{zmienna z selektem}, polaczenie{nazwa z poprzedniego usinga}))
     - Potem w przypadku DataGrid robimy:
+
   
       
         DataTable dt = new DataTable(); //Definicja tabeli
@@ -29,6 +30,7 @@
         da.Fill(dt); //Wypełnienie tabeli
       
         dataGrid1.ItemsSource = dt.DefaultView; //Dodanie wypełnionych danych do atrybutu ItemSource naszego DataGrida
+
 
       
     - W catch(jeżeli będzie błąd wyświetlamy komunikat): 
