@@ -5,16 +5,22 @@
     - Tworzymy stringa do połączenia, w którym definiujemy serwer,bazę danych, użytkownika i hasło np. 
 
     string mojePol =
+   
         "SERVER=" + nazwaServeratb.Text + ";" +
+   
         "DATABASE=" + nazwaBazyDanychtb.Text + ";" +
+   
         "UID=" + uzytkowniktb.Text + ";" +
+   
         "PASSWORD=" + haslotb.Password + ";"; 
+
 
     - tworzymy zminną, w której wybieramy selectem wszystkie dane z bazy
     - robimy using(MySqlConnection polaczenie = new MySqlConnection(mojePol{nazwa stringa do polacznia}))
     - try catch
     - w try robimy using (MySqlCommand  cmdSel = new MySqlCommand(sql{zmienna z selektem}, polaczenie{nazwa z poprzedniego usinga}))
     - Potem w przypadku DataGrid robimy:
+  
       
         DataTable dt = new DataTable(); //Definicja tabeli
       
@@ -23,6 +29,7 @@
         da.Fill(dt); //Wypełnienie tabeli
       
         dataGrid1.ItemsSource = dt.DefaultView; //Dodanie wypełnionych danych do atrybutu ItemSource naszego DataGrida
+
       
     - W catch(jeżeli będzie błąd wyświetlamy komunikat): 
         MessageBox.Show("Błąd podczas połączenia z bazą: " + ex.Message, "ERROR!!!!!!!!!!!!!!"); //ex to metoda catch(MySqlException ex)
