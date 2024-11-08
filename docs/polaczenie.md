@@ -6,13 +6,13 @@
 
     string mojePol =
    
-        "SERVER=" + nazwaServeratb.Text + ";" +
+      `  "SERVER=" + nazwaServeratb.Text + ";" +
    
         "DATABASE=" + nazwaBazyDanychtb.Text + ";" +
    
         "UID=" + uzytkowniktb.Text + ";" +
    
-        "PASSWORD=" + haslotb.Password + ";"; 
+        "PASSWORD=" + haslotb.Password + ";"; `
 
 
     - tworzymy zminną, w której wybieramy selectem wszystkie dane z bazy
